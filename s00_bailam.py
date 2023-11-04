@@ -38,7 +38,7 @@ def get_name_in_email(email_list):
     if mail is None:
       rs.append('ERROR invaid email')
     else:
-      if mail.find('@') != -1 and mail.find('.') != -1 and    mail.index('@') < mail.rindex('.'):
+      if mail.find('@') != -1 and mail.find('.') != -1 and mail.index('@') < mail.rindex('.'):
         name = mail[:mail.index('@')]
         rs.append(name)
       else:
